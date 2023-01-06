@@ -9,9 +9,9 @@
         <div class="col-9 pt-5">
             <div><h1>{{$user->nickname}}</h1></div>
             <div>
-                <div><strong>SomeText</strong></div>
-                <div><strong>SomeText</strong></div>
-                <div><strong>SomeText</strong></div>
+                <div><strong>{{$user->profile->user_id}}</strong></div>
+                <div><strong>{{$user->profile->VPN_description ?? 'N\A'}}</strong></div>
+                <div><strong>{{$user->profile->id}}</strong></div>
             </div>
         </div>
 
