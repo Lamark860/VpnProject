@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\API\V1\ListOfVpnController;
+use App\Http\Controllers\API\V1\VpnsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +21,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
+
+Route::get('/list', [ListOfVpnController::class, 'index'])->name('listOfVpns.index');
+
+Route::get('/vpns/{user}' , [VpnsController::class, 'show'])->name('vpns.show');
+Route::get('/vpns/rent/{user_id}/{vpn_id}' , [VpnsController::class, 'rent']);

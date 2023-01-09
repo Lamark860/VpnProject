@@ -24,8 +24,9 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
-                    <div><img src="/svg/shield-lock.svg" style="height: 20px; border-right: 1px solid #333" ></div>
-                    <div class="pl-3"> Vpn </div>
+                    <div><img src="/svg/shield-lock.svg" style=" height: 20px;"></div>
+                    <div style=" border-right: 1px solid #333; width: 10px "></div>
+                    <div class="mx-2"> Vpn </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

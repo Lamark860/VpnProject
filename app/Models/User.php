@@ -43,9 +43,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function profile()
+    public function listOfVpns()
     {
-        return $this->hasOne(Profile::class);
+        return $this->hasOne(ListOfVpns::class);
     }
 
     public function vpns()
